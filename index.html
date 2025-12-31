@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Portfolio | Week 3</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header>
+    <h1>Santhosh</h1>
+    <p>JavaScript Interactive Portfolio</p>
+    <button id="themeToggle">🌙 Dark Mode</button>
+  </header>
+  
+<section class="profile">
+  <img src="DSC_0538.JPG" alt="Profile Photo" class="profile-img" />
+
+  <h2>Santhosh</h2>
+  <p class="role">Web Development Student</p>
+
+  <div class="profile-info">
+    <span> HTML • CSS • JavaScript</span>
+    <span> Student</span>
+    <span> Learning Web Development</span>
+  </div>
+</section>
+
+
+  <main>
+
+    <div class="card">
+      <h2>About Me</h2>
+      <button id="toggleAbout">Show / Hide</button>
+      <p id="aboutText">
+        I am a student learning JavaScript to build dynamic and interactive websites.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>To-Do List</h2>
+      <div class="todo-box">
+        <input type="text" id="taskInput" placeholder="Enter a task" />
+        <button onclick="addTask()">Add</button>
+      </div>
+      <ul id="taskList"></ul>
+    </div>
+
+    <div class="card">
+      <h2>Contact Form</h2>
+      <form id="contactForm">
+        <input type="email" id="email" placeholder="Your email" />
+        <textarea id="message" placeholder="Your message"></textarea>
+        <button type="submit">Send</button>
+        <p id="formMessage"></p>
+      </form>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2025 | Week 3 JavaScript Task</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
